@@ -22,7 +22,7 @@ fréquente dans le message chiffré.
 **main()**  
 **{**  
 **// déclaration du tableau destiné à contenir le message en clair**  
-**// déclaration du tableau destiné à contenir la clé**
+**// déclaration du tableau destiné à contenir la clé**  
 **// appel de la procédure d'encodage du message (en majuscule)**  
 
 **// appel de la procédure d'encodage de la clé (en majuscule)**  
