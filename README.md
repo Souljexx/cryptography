@@ -18,3 +18,20 @@ Pour déchiffrer on fera E - T = L._
 
 Le programme doit également comparer la lettre la plus fréquente dans le message en clair avec celle la plus  
 fréquente dans le message chiffré.  
+
+**main()**
+**{**
+**// déclaration du tableau destiné à contenir le message en clair**  
+**// déclaration du tableau destiné à contenir la clé**
+**// appel de la procédure d'encodage du message (en majuscule)**  
+
+**// appel de la procédure d'encodage de la clé (en majuscule)**  
+**// appel de la procédure de répétition de la clé**  
+
+**// appel de la procédure de chiffrement/déchiffrement**  
+**// appel de la fonction de détermination de la lettre qui apparaît le plus souvent dans le message en clair**  
+**// appel de la fonction de détermination de la lettre qui apparaît le plus souvent dans le message chiffré**  
+
+**}**
+
+
