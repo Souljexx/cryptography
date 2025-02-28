@@ -18,7 +18,10 @@ Pour déchiffrer on fera E - T = L._
 
 Le programme doit également comparer la lettre la plus fréquente dans le message en clair avec celle la plus  
 fréquente dans le message chiffré.  
-
+  
+Pour finir, le programme doit sauvegarder les différentes informations sous le format suivant :  
+**Clé - Message chiffré.** Il les sauvegardera dans un fichier  
+  
 **main()**  
 **{**  
 **// déclaration du tableau destiné à contenir le message en clair**  
@@ -32,6 +35,9 @@ fréquente dans le message chiffré.
 **// appel de la fonction de détermination de la lettre qui apparaît le plus souvent dans le message en clair**  
 **// appel de la fonction de détermination de la lettre qui apparaît le plus souvent dans le message chiffré**  
 **// affichage des 2 résultats**  
+  
+**// affichage des données à sauvegarder**  
+**// appel de la procédure de sauvegarde**
 **}**
 
 
