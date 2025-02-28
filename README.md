@@ -20,7 +20,7 @@ Le programme doit également comparer la lettre la plus fréquente dans le messa
 fréquente dans le message chiffré.  
   
 Pour finir, le programme doit sauvegarder les différentes informations sous le format suivant :  
-**Clé - Message chiffré.** Il les sauvegardera dans un fichier  
+**Clé - Message chiffré.** Il les sauvegardera dans un fichier.  
   
 **main()**  
 **{**  
@@ -37,7 +37,7 @@ Pour finir, le programme doit sauvegarder les différentes informations sous le 
 **// affichage des 2 résultats**  
   
 **// affichage des données à sauvegarder**  
-**// appel de la procédure de sauvegarde**
+**// appel de la procédure de sauvegarde**  
 **}**
 
 
