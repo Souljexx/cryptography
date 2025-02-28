@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// Function to encode the message input by the user
+// Encode the message input by the user
 void message_encoding(char message[50]) {
   printf("Enter the message: ");
   scanf("%s", message);
