@@ -7,7 +7,7 @@ void message_encoding(char message[50]) {
   printf("Enter the message: ");
   scanf("%s", message);
 
-  // Validate that all characters in the message are uppercase letters
+  // Check if that all characters in the message are uppercase letters
   for (int i = 0; message[i] != '\0'; i++) {
     while (!isupper(message[i]) && message[i] != '\n' && message[i] != ' ') {
       printf("Enter the message: ");
@@ -16,14 +16,14 @@ void message_encoding(char message[50]) {
   }
 }
 
-// Function to prompt the user to enter the key (not fully implemented)
+// Prompt the user to enter the key
 void key_encoding() { printf("Enter the key: "); }
 
 // Function to repeat the key input by the user twice
 void repeat(char key[50]) {
   scanf("%s", key);
 
-  // Validate that all characters in the key are uppercase letters
+  // Check if all characters in the key are uppercase letters
   for (int i = 0; key[i] != '\0'; i++) {
     while (!isupper(key[i]) && key[i] != '\n' && key[i] != ' ') {
       printf("Enter the key: ");
@@ -38,7 +38,7 @@ void repeat(char key[50]) {
   }
 }
 
-// Function to encrypt the message using the Beaufort cipher
+// Function to encrypt the message using the Beaufort cipher algorithm
 void encrypt(const char *message, const char *key, char *result) {
   const char *alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   result[0] = '\0'; // Initialize result as an empty string
@@ -105,8 +105,7 @@ char key_frequencyLetter(char key[50]) {
   return mostFrequent;
 }
 
-// Function to save the message, key, ciphertext, and frequency letters to a
-// file
+// Function to save the message, key, ciphertext, and frequency letters to a file
 void backup_file(const char *message, const char *key, const char *result,
                  char freq_m, char freq_k) {
   FILE *file = fopen("beaufort_cipher.txt", "w");
@@ -115,8 +114,7 @@ void backup_file(const char *message, const char *key, const char *result,
     return;
   }
 
-  // Write the encoded message, key, ciphertext, and frequency letters to the
-  // file
+  // Write the encoded message, key, ciphertext, and frequency letters to the .txt file
   fprintf(file, "Message encoded: %s\n", message);
   fprintf(file, "Key encoded: %s\n", key);
   fprintf(file, "Ciphertext: %s\n", result);
@@ -129,28 +127,20 @@ void backup_file(const char *message, const char *key, const char *result,
 int main(void) {
   char message[50], key[50], ciphertext[50];
 
-  // Encode the message
   message_encoding(message);
-  // Prompt the user to enter the key
   key_encoding();
-  // Repeat the key twice
   repeat(key);
-
-  // Encrypt the message using the key
+  
   encrypt(message, key, ciphertext);
 
-  // Print the resulting ciphertext
   printf("\nCiphertext: %s", ciphertext);
 
-  // Find and print the most frequent letter in the message
   char freq1 = message_frequencyLetter(message);
   printf("\nMost frequent letter in the message: %c ", freq1);
 
-  // Find and print the most frequent letter in the key
   char freq2 = key_frequencyLetter(key);
   printf("\nMost frequent letter in the key: %c ", freq2);
 
-  // Save the message, key, ciphertext, and frequency letters to a file
   backup_file(message, key, ciphertext, freq1, freq2);
 
   return 0;
