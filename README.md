@@ -31,6 +31,7 @@ fréquente dans le message chiffré.
 **// appel de la procédure de chiffrement/déchiffrement**  
 **// appel de la fonction de détermination de la lettre qui apparaît le plus souvent dans le message en clair**  
 **// appel de la fonction de détermination de la lettre qui apparaît le plus souvent dans le message chiffré**  
+**// affichage des 2 résultats**
 **}**
 
 
