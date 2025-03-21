@@ -6,8 +6,6 @@ l'utilisateur va devoir encoder le message ainsi qu'une clé de chiffrement. Dan
 chiffrement est plus petite que le texte à chiffrer, celle-ci est alors répétée pour obtenir la taille  
 correspondante.
 
-![Texte alternatif](https://gemini.google.com/app/afa0c1f981c73ce2?hl=fr)
-
 _Exemple : La clé « EXAMEN » va être utilisée pour chiffrer la chaîne « LABORATOIRES »  
 La clé deviendra donc : « EXAMENEXAMEN »_  
 
