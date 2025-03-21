@@ -6,6 +6,8 @@ l'utilisateur va devoir encoder le message ainsi qu'une clé de chiffrement. Dan
 chiffrement est plus petite que le texte à chiffrer, celle-ci est alors répétée pour obtenir la taille  
 correspondante.
 
+![Image](https://github.com/user-attachments/assets/690a19f6-f615-4222-bc45-b52afebbc7f4)
+
 _Exemple : La clé « EXAMEN » va être utilisée pour chiffrer la chaîne « LABORATOIRES »  
 La clé deviendra donc : « EXAMENEXAMEN »_  
 
