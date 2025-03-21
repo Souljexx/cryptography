@@ -6,6 +6,8 @@ l'utilisateur va devoir encoder le message ainsi qu'une clé de chiffrement. Dan
 chiffrement est plus petite que le texte à chiffrer, celle-ci est alors répétée pour obtenir la taille  
 correspondante.  
 
+![Beaufort cipher](C:\Users\bensa\Downloads\beaufort_cipher.jpeg)
+
 _Exemple : La clé « EXAMEN » va être utilisée pour chiffrer la chaîne « LABORATOIRES »  
 La clé deviendra donc : « EXAMENEXAMEN »_  
 
